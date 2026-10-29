@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🔐 Cybersecurity Lab Environment Setup
+# 🔐🛡️ Cybersecurity Lab: Kali Linux & Isolated NAT Network Setup
 
 *Building an isolated virtual lab for penetration testing and ethical hacking practice*
 </div>
@@ -19,7 +19,7 @@
   <img src="https://img.shields.io/badge/Ethical%20Hacking-E87500?style=flat-square&labelColor=000000&logo=kalilinux&logoColor=white" />
   <img src="https://img.shields.io/badge/Waqas%20Karim%20CCIE-C00000?style=flat-square" />
 </p>
-🛡️ Cybersecurity Lab: Kali Linux & Isolated NAT Network Setup
+
 ![Kali Linux Desktop](./Screenshot%202026-Kali%20UF.png)
 A clean, reproducible, and isolated penetration testing lab built on Oracle VM VirtualBox and Kali Linux. Designed to practice cybersecurity tools safely without exposing the host machine or home network.
 
