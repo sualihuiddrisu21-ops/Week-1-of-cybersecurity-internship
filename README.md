@@ -1,5 +1,5 @@
 🛡️ Cybersecurity Lab: Kali Linux & Isolated NAT Network Setup
-
+![Kali Linux Desktop](./Screenshot%202026-Kali%20UF.png)
 A clean, reproducible, and isolated penetration testing lab built on Oracle VM VirtualBox and Kali Linux. Designed to practice cybersecurity tools safely without exposing the host machine or home network.
 
 📌 Project Overview & Objectives
@@ -40,7 +40,7 @@ Step 2. Install VirtualBox
 Deployed Oracle VM VirtualBox along with the Extension Pack to enable enhanced virtualization drivers.
 
 Step 3. Create the NAT Network
-
+![VirtualBox NAT Network](./Screenshot%202026-10-28%20%20Natwork.png)
 Created NatNetwork with IPv4 Prefix 10.0.0.0/24 and enabled DHCP for automatic lease management.
 
 Step 4. Import Kali Linux
@@ -48,11 +48,11 @@ Step 4. Import Kali Linux
 Imported the official pre-built Kali Linux VirtualBox image and configured system memory and vCPU allocations.
 
 Step 5. Configure Network & Static IP
-
+![Static IP Settings](./Screenshot%202026-ip%20settings.png)
 Attached Kali's virtual network adapter to NAT Network (NatNetwork). Within Kali, configured a static IPv4 connection (10.0.0.2/24, Gateway: 10.0.0.1, DNS: 10.0.0.1).
 
 Step 6. Create a Clean VM Snapshot
-
+![Clean Snapshot](./Screenshot%202026-snapshot.png)
 Created a baseline snapshot named My new kali linux with the description: "i have set up my ip adress and the internet works perfectly." This guarantees instant recovery if future tests or scripts corrupt the OS.
 
 🛠️ Real Problem Encountered & Solution
@@ -68,7 +68,7 @@ Switched the Kali VM network adapter from NAT Network to Internal Network and bo
 Gracefully shut down, then switched the adapter back to NAT Network.
 
 Rebooted Kali—this forced VirtualBox to rebind the virtual network adapter, instantly restoring full internet connectivity.
-
+![Internet Connection Verified](./Screenshot%202026-network%20testing.png)
 💡 Key Takeaways
 
 NAT vs. NAT Network: Standard NAT isolates each machine by itself. NAT Network acts like a virtual switch so attacker and target VMs can communicate with one another.
